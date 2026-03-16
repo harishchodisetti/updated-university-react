@@ -1,4 +1,4 @@
-import "./Programs.css";
+import "./programs.css";
 import img1 from "../../assets/program-1.png";
 import img2 from "../../assets/program-2.png";
 import img3 from "../../assets/program-3.png";
