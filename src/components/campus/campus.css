@@ -1,0 +1,27 @@
+.program {
+  width: 100%;
+  padding: 50px 20px;   /* top & bottom space like image */
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.program-subtitle {
+  color: #2438b8;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.program-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .program-title {
+    font-size: 28px;
+  }
+}

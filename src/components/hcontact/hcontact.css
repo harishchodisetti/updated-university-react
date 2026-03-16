@@ -1,0 +1,19 @@
+.title {
+  text-align: center;
+  padding: 30px 0 10px;
+   background-color: white;
+}
+
+.title-sub {
+  color: #2438b8;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.title-main {
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+}

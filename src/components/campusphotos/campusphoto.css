@@ -1,0 +1,53 @@
+.campusphoto {
+  padding: 40px 10%;
+  text-align: center;
+  background: #fff;
+}
+
+/* FLEX layout */
+.campusphoto-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.campusphoto-images img {
+  width: 23%;              /* 4 images in one row */
+  height: 320px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Button */
+.campusphoto-btn {
+  background: #2438b8;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.campusphoto-btn span {
+  font-size: 18px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .campusphoto-images img {
+    width: 48%;   /* 2 images per row */
+  }
+}
+
+@media (max-width: 600px) {
+  .campusphoto-images img {
+    width: 100%;  /* 1 image per row */
+    height: 260px;
+  }
+}

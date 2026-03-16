@@ -1,0 +1,126 @@
+/* =========================
+   BACKGROUND
+========================= */
+
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #141e30, #243b55, #1f4037, #99f2c8);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px; /* below navbar */
+}
+
+/* =========================
+   CARD
+========================= */
+
+.login-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 60px 40px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+  color: white;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+.login-card h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* =========================
+   INPUT GROUP
+========================= */
+
+.input-group {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: white;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Floating Label */
+.input-group label {
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  color: #ccc;
+  transition: 0.3s ease;
+  pointer-events: none;
+}
+
+/* FIXED FLOATING LOGIC */
+.input-group input:focus ~ label,
+.input-group input:not(:placeholder-shown) ~ label {
+  top: -14px;
+  font-size: 13px;
+  color: #00f2fe;
+}
+
+/* Focus effect */
+.input-group input:focus {
+  border-bottom: 2px solid #00f2fe;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.login-card button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 242, 254, 0.6);
+}
+
+/* =========================
+   BACKGROUND ANIMATION
+========================= */
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 40px 25px;
+  }
+}

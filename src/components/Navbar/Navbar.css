@@ -1,0 +1,96 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+/* Background after scroll */
+.navbar.scrolled {
+  background-color: #2438b8;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Desktop Nav */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* Button */
+.contact-btn {
+  background-color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* ========================= */
+/* 🔥 MOBILE RESPONSIVE */
+/* ========================= */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #2438b8;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
